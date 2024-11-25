@@ -1,0 +1,40 @@
+<odoo>
+    <record id="view_pedido_tree" model="ir.ui.view">
+        <field name="name">pedido.tree</field>
+        <field name="model">upobebe.pedido</field>
+        <field name="arch" type="xml">
+            <tree string="Pedidos">
+                <field name="id_pedido"/>
+                <field name="estado"/>
+                <field name="usuario_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_pedido_form" model="ir.ui.view">
+        <field name="name">pedido.form</field>
+        <field name="model">upobebe.pedido</field>
+        <field name="arch" type="xml">
+            <form string="Pedido">
+                <group>
+                    <field name="id_pedido"/>
+                    <field name="estado"/>
+                    <field name="usuario_id"/>
+                    <field name="compra_id"/>
+                    <field name="devolucion_id"/>
+                    <field name="productos_ids"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="pedidos_list_action" model="ir.actions.act_window">
+        <field name="name">Pedidos</field>
+        <field name="res_model">upobebe.pedido</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Crea el primer pedido</p>
+        </field>
+    </record>
+
+</odoo>

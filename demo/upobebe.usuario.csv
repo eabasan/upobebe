@@ -1,0 +1,11 @@
+id_usuario,nombre,apellido,email,contrasena
+1,"Ana","García","ana.garcia@example.com","contraseña123"
+2,"Luis","Martínez","luis.martinez@example.com","pass456"
+3,"María","López","maria.lopez@example.com","maria789"
+4,"Carlos","Pérez","carlos.perez@example.com","password2023"
+5,"Lucía","Hernández","lucia.hernandez@example.com","clave987"
+6,"José","Ramírez","jose.ramirez@example.com","josepass"
+7,"Elena","Sánchez","elena.sanchez@example.com","securepass"
+8,"Miguel","Torres","miguel.torres@example.com","miguel123"
+9,"Laura","Ruiz","laura.ruiz@example.com","laurapass"
+10,"Juan","Gómez","juan.gomez@example.com","juangomez456"

@@ -1,0 +1,11 @@
+id_valoracion,puntuacion,comentario,producto_id,usuario_id
+1,5,"Excelente producto",1,1
+2,4,"Muy bueno, pero un poco caro",2,2
+3,3,"Cumple su función, pero no es lo que esperaba",3,3
+4,5,"Ideal para mi bebé",4,4
+5,4,"Buen producto, aunque un poco pequeño",5,5
+6,2,"No me gustó mucho",6,6
+7,4,"Está bien, aunque el color no es el que esperaba",7,7
+8,3,"No es como lo imaginaba",8,8
+9,5,"Muy útil y bonito",9,9
+10,4,"Buena calidad, pero el envío fue lento",10,10

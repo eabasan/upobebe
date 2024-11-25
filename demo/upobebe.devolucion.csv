@@ -1,0 +1,11 @@
+motivo,estado,usuario_id/id,pedido_id/id
+"Producto defectuoso","pendiente",1,1
+"No funciona correctamente","enviado",2,2
+"Falta una pieza","entregado",3,3
+"Pelea con el material","cancelado",4,4
+"Demasiado caro","devuelto",5,5
+"El producto no era lo que esperaba","pendiente",6,6
+"Producto incompleto","enviado",7,7
+"No entrega a tiempo","entregado",8,8
+"Tamaño incorrecto","pendiente",9,9
+"Defectuoso","devuelto",10,10

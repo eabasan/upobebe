@@ -1,0 +1,11 @@
+id_reclamacion,mensaje,nombre,telefono,producto,usuario_id,administrador_id
+1,"Producto defectuoso","Ana García",123456789,1,1,1
+2,"No funciona correctamente","Luis Martínez",987654321,2,2,1
+3,"Falta una pieza","María López",456789123,3,3,2
+4,"Pelea con el material","Carlos Pérez",789123456,4,4,2
+5,"Demasiado caro","Lucía Hernández",321654987,5,5,3
+6,"El producto no era lo que esperaba","José Ramírez",654987321,6,6,3
+7,"Producto incompleto","Elena Sánchez",112233445,7,7,4
+8,"No entrega a tiempo","Miguel Torres",223344556,8,8,4
+9,"Tamaño incorrecto","Laura Ruiz",334455667,9,9,5
+10,"Defectuoso","Juan Gómez",445566778,10,10,5

@@ -1,0 +1,54 @@
+<odoo>
+    <record id="view_compra_tree" model="ir.ui.view">
+        <field name="name">compra.tree</field>
+        <field name="model">upobebe.compra</field>
+        <field name="arch" type="xml">
+            <tree string="Compras">
+                <field name="fecha"/>
+                <field name="hora"/>
+                <field name="id_compra"/>
+                <field name="total"/>
+                <field name="usuario_id"/>
+                <field name="pedido_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_compra_form" model="ir.ui.view">
+        <field name="name">compra.form</field>
+        <field name="model">upobebe.compra</field>
+        <field name="arch" type="xml">
+            <form string="Compra">
+                <group>
+                    <field name="fecha"/>
+                    <field name="hora"/>
+                    <field name="id_compra"/>
+                    <field name="total"/>
+                    <field name="usuario_id"/>
+                    <field name="pedido_id"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_compra_calendar" model="ir.ui.view">
+    <field name="name">upobebe.compra.calendar</field>
+    <field name="model">upobebe.compra</field>
+    <field name="arch" type="xml">
+      <calendar string="Compras" date_start="fecha" date_stop="fecha" mode="month">
+        <field name="id_compra" />
+        <field name="total" />
+      </calendar>
+    </field>
+  </record>
+    
+    <record id="compras_list_action" model="ir.actions.act_window">
+        <field name="name">Compras</field>
+        <field name="res_model">upobebe.compra</field>
+        <field name="view_mode">tree,form,calendar</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Crea la primera compra</p>
+        </field>
+    </record>
+
+</odoo>

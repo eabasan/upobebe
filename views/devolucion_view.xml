@@ -1,0 +1,39 @@
+<odoo>
+    <record id="view_devolucion_tree" model="ir.ui.view">
+        <field name="name">devolucion.tree</field>
+        <field name="model">upobebe.devolucion</field>
+        <field name="arch" type="xml">
+            <tree string="Devoluciones">
+                <field name="motivo"/>
+                <field name="estado"/>
+                <field name="usuario_id"/>
+                <field name="pedido_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_devolucion_form" model="ir.ui.view">
+        <field name="name">devolucion.form</field>
+        <field name="model">upobebe.devolucion</field>
+        <field name="arch" type="xml">
+            <form string="Devolución">
+                <group>
+                    <field name="motivo"/>
+                    <field name="estado"/>
+                    <field name="usuario_id"/>
+                    <field name="pedido_id"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="devoluciones_list_action" model="ir.actions.act_window">
+        <field name="name">Devoluciones</field>
+        <field name="res_model">upobebe.devolucion</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Crea la primera devolución</p>
+        </field>
+    </record>
+
+</odoo>

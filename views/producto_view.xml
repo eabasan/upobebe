@@ -1,0 +1,49 @@
+<odoo>
+    <record id="view_producto_tree" model="ir.ui.view">
+        <field name="name">producto.tree</field>
+        <field name="model">upobebe.producto</field>
+        <field name="arch" type="xml">
+            <tree string="Productos">
+                <field name="id_producto"/>
+                <field name="nombre"/>
+                <field name="tipo"/>
+                <field name="precio"/>
+                <field name="stock"/>
+                <field name="proveedor_id"/>
+                <field name="catalogo_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_producto_form" model="ir.ui.view">
+        <field name="name">producto.form</field>
+        <field name="model">upobebe.producto</field>
+        <field name="arch" type="xml">
+            <form string="Producto">
+                <group>
+                    <field name="id_producto"/>
+                    <field name="nombre"/>
+                    <field name="descripcion"/>
+                    <field name="tipo"/>
+                    <field name="precio"/>
+                    <field name="stock"/>
+                    <field name="edad_recomendada"/>
+                    <field name="proveedor_id"/>
+                    <field name="catalogo_id"/>
+                    <field name="pedido_id"/>
+                    <field name="valoracion_ids"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="productos_list_action" model="ir.actions.act_window">
+        <field name="name">Productos</field>
+        <field name="res_model">upobebe.producto</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Crea el primer producto</p>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,11 @@
+id_producto,nombre,descripcion,tipo,precio,stock,edad_recomendada,proveedor_id,catalogo_id
+1,"Cuna Convertible","Cuna de madera convertible en cama para niños de hasta 3 años","accesorio",199.99,10,36,"1", "1"
+2,"Silla de Paseo","Ligera y plegable, ideal para llevar de paseo","accesorio",89.99,15,6,"2", "1"
+3,"Juguete Didáctico","Juguete educativo con formas y colores para el desarrollo cognitivo","juguete",19.99,30,12,"3", "1"
+4,"Conjunto de Ropa","Ropa de algodón orgánico para bebés de 0 a 3 meses","ropa",29.99,25,3,"4", "1"
+5,"Trona Evolutiva","Trona que se ajusta a medida que el niño crece, de 6 meses a 3 años","accesorio",139.99,8,6,"5", "1"
+6,"Móvil Musical","Móvil musical para cuna con luces y sonidos","accesorio",25.50,20,0,"6", "1"
+7,"Cojín de Lactancia","Cojín ergonómico para facilitar la lactancia","accesorio",35.00,18,0,"7", "1"
+8,"Pelota de Actividades","Pelota suave con texturas para estimular los sentidos","juguete",15.00,22,6,"8", "1"
+9,"Baberos Impermeables (Pack de 3)","Baberos con forro impermeable, ideales para la hora de comer","ropa",10.99,50,3,"9", "1"
+10,"Gimnasio para Bebés","Gimnasio de actividades con juguetes colgantes","juguete",49.99,12,3,"10", "1"

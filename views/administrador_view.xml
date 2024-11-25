@@ -1,0 +1,39 @@
+<odoo>
+    <record id="view_administrador_tree" model="ir.ui.view">
+        <field name="name">administrador.tree</field>
+        <field name="model">upobebe.administrador</field>
+        <field name="arch" type="xml">
+            <tree string="Administradores">
+                <field name="id_admin"/>
+                <field name="nombre"/>
+                <field name="email"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_administrador_form" model="ir.ui.view">
+        <field name="name">administrador.form</field>
+        <field name="model">upobebe.administrador</field>
+        <field name="arch" type="xml">
+            <form string="Administrador">
+                <group>
+                    <field name="id_admin"/>
+                    <field name="nombre"/>
+                    <field name="email"/>
+                    <field name="reclamacion_ids"/>
+                    <field name="catalogo_ids"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="administradores_list_action" model="ir.actions.act_window">
+        <field name="name">Administradores</field>
+        <field name="res_model">upobebe.administrador</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Crea el primer administrador</p>
+        </field>
+    </record>
+
+</odoo>

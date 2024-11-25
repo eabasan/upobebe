@@ -1,0 +1,51 @@
+<odoo>
+    <!-- Vista de Formulario para Catálogos -->
+    <record id="view_catalogo_form" model="ir.ui.view">
+        <field name="name">upobebe.catalogo.form</field>
+        <field name="model">upobebe.catalogo</field>
+        <field name="arch" type="xml">
+            <form string="Catálogo" create="false">
+                <sheet>
+                    <group>
+                        <field name="tamanyo"/>
+                        <field name="num_prod"/>
+                        <field name="catalogo_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Productos">
+                            <field name="productos_ids">
+                                <tree create="false">
+                                    <field name="id_producto"/>
+                                    <field name="nombre"/>
+                                    <field name="tipo"/>
+                                    <field name="precio"/>
+                                    <field name="stock"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- Vista de Lista para Catálogos (con importación habilitada) -->
+    <record id="view_catalogo_list" model="ir.ui.view">
+        <field name="name">upobebe.catalogo.list</field>
+        <field name="model">upobebe.catalogo</field>
+        <field name="arch" type="xml">
+            <tree string="Catálogo" import="true">
+                <field name="tamanyo"/>
+                <field name="num_prod"/>
+                <field name="catalogo_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Acción para abrir vistas de Catálogo -->
+    <record id="catalogos_list_action" model="ir.actions.act_window">
+        <field name="name">Catálogo</field>
+        <field name="res_model">upobebe.catalogo</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_catalogo_list"/>
+    </record>
+</odoo>

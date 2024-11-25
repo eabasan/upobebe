@@ -1,0 +1,11 @@
+<odoo>
+    <!-- Grupo para Managers -->
+    <record id="group_upobebe_manager" model="res.groups">
+        <field name="name">UPOBEBE / Manager</field>
+    </record>
+
+    <!-- Grupo para Usuarios Básicos -->
+    <record id="group_upobebe_user" model="res.groups">
+        <field name="name">UPOBEBE / User</field>
+    </record>
+</odoo>
