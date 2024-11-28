@@ -17,10 +17,10 @@
         <field name="arch" type="xml">
             <form string="Pedido">
                 <header>
-                    <button name="action_enviado" string="Enviar" type="object" class="oe_highlight"/>
-                    <button name="action_entregado" string="Entregar" type="object" class="oe_highlight"/>
-                    <button name="action_cancelado" string="Cancelar" type="object" class="oe_highlight"/>
-                    <button name="action_devuelto" string="Devolver" type="object" class="oe_highlight"/>
+                    <button name="action_enviado" string="Enviar" type="object" class="oe_highlight" groups="upobebe.group_upobebe_manager"/>
+                    <button name="action_entregado" string="Entregar" type="object" class="oe_highlight" groups="upobebe.group_upobebe_manager"/>
+                    <button name="action_cancelado" string="Cancelar" type="object" class="oe_highlight" groups="upobebe.group_upobebe_manager"/>
+                    <button name="action_devuelto" string="Devolver" type="object" class="oe_highlight" groups="upobebe.group_upobebe_manager,upobebe.group_upobebe_user"/>
                 </header>
                 <sheet>
                     <group>
