@@ -20,7 +20,7 @@ class Producto(models.Model):
     proveedor_id = fields.Many2one('upobebe.proveedor', string="Proveedor")
 
     # Relación con Catálogo (1 catálogo contiene varios productos)
-    catalogo_id = fields.Many2one('upobebe.catalogo', string="Catálogo")
+    catalogo_id = fields.Many2one('upobebe.catalogo', string="Catálogo", compute='_compute_catalogo', store=True, readonly=False)
 
     # Relación con Pedido (1 producto pertenece a un pedido)
     pedido_id = fields.Many2one('upobebe.pedido', string='Pedido', ondelete='cascade')

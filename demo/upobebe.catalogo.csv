@@ -1,4 +1,4 @@
-id,tamanyo,num_prod,catalogo_id,administrador_id
-catalogo_1,100,50,1,administrador_1
-catalogo_2,200,150,2,administrador_2
-catalogo_3,300,250,3,administrador_3
+id,tamanyo,num_prod,catalogo_id,administrador_id,tipo
+catalogo_1,100,50,1,administrador_1,juguete
+catalogo_2,200,150,2,administrador_2,ropa
+catalogo_3,300,250,3,administrador_3,accesorio

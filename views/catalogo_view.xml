@@ -7,6 +7,7 @@
             <form string="Catálogo" create="false">
                 <sheet>
                     <group>
+                        <field name="tipo"/>
                         <field name="tamanyo"/>
                         <field name="num_prod"/>
                         <field name="catalogo_id"/>
@@ -37,6 +38,7 @@
                 <field name="tamanyo"/>
                 <field name="num_prod"/>
                 <field name="catalogo_id"/>
+                <field name="tipo"/>
             </tree>
         </field>
     </record>
