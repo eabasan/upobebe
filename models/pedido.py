@@ -24,3 +24,12 @@ class Pedido(models.Model):
 
     # Relación con Productos (n productos en un pedido)
     productos_ids = fields.One2many('upobebe.producto', 'pedido_id', string="Productos")
+
+    def action_enviado(self): 
+        self.write({'estado': 'enviado'}) 
+    def action_entregado(self): 
+        self.write({'estado': 'entregado'}) 
+    def action_cancelado(self): 
+        self.write({'estado': 'cancelado'}) 
+    def action_devuelto(self): 
+        self.write({'estado': 'devuelto'})

@@ -16,14 +16,22 @@
         <field name="model">upobebe.pedido</field>
         <field name="arch" type="xml">
             <form string="Pedido">
-                <group>
-                    <field name="id_pedido"/>
-                    <field name="estado"/>
-                    <field name="usuario_id"/>
-                    <field name="compra_id"/>
-                    <field name="devolucion_id"/>
-                    <field name="productos_ids"/>
-                </group>
+                <header>
+                    <button name="action_enviado" string="Enviar" type="object" class="oe_highlight"/>
+                    <button name="action_entregado" string="Entregar" type="object" class="oe_highlight"/>
+                    <button name="action_cancelado" string="Cancelar" type="object" class="oe_highlight"/>
+                    <button name="action_devuelto" string="Devolver" type="object" class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="id_pedido"/>
+                        <field name="estado" widget="statusbar"/>
+                        <field name="usuario_id"/>
+                        <field name="compra_id"/>
+                        <field name="devolucion_id"/>
+                        <field name="productos_ids"/>
+                    </group>
+                </sheet>
             </form>
         </field>
     </record>
