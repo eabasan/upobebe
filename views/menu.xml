@@ -17,7 +17,7 @@
     <!-- Actions -->
     <menuitem name="Administradores" id="administradores_menu" parent="administracion_menu" groups="group_upobebe_manager" action="administradores_list_action"/>
     <menuitem name="Compras" id="compras_menu" parent="administracion_menu" groups="group_upobebe_manager" action="compras_list_action"/>
-    <menuitem name="Productos" id="productos_menu_category" groups="group_upobebe_manager" action="productos_list_action"/>
+    <menuitem name="Productos" id="productos_menu_action" groups="group_upobebe_manager" action="productos_list_action"/>
     <menuitem name="Proveedores" id="proveedores_menu" parent="administracion_menu" groups="group_upobebe_manager" action="proveedores_list_action"/>
     <menuitem name="Usuarios" id="usuarios_menu_action" parent="administracion_menu" groups="group_upobebe_manager" action="usuarios_list_action"/>
     <menuitem name="Pedidos" id="pedidos_menu" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu" action="pedidos_list_action"/>
