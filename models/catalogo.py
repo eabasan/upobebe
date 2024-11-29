@@ -17,9 +17,11 @@ class Catalogo(models.Model):
 
     @api.depends('tipo')
     def _compute_productos(self):
+        # Filtra y asigna los productos al catálogo según el tipo de producto
         for catalogo in self:
             catalogo.productos_ids = self.env['upobebe.producto'].search([('tipo', '=', catalogo.tipo)])
     @api.depends('productos_ids.stock')
     def _compute_num_prod(self):
+        # Calcula el stock total (num_prod) sumando el stock de todos los productos en el catálogo
         for catalogo in self:
             catalogo.num_prod = sum(producto.stock for producto in catalogo.productos_ids)
