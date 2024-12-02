@@ -11,6 +11,7 @@
                 <field name="stock"/>
                 <field name="proveedor_id"/>
                 <field name="catalogo_id"/>
+                <field name="promedio_valoracion"/>
             </tree>
         </field>
     </record>
@@ -32,6 +33,7 @@
                     <field name="catalogo_id"/>
                     <field name="pedido_id"/>
                     <field name="valoracion_ids"/>
+                    <field name="promedio_valoracion" readonly="1"/>
                 </group>
             </form>
         </field>
