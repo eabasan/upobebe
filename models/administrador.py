@@ -1,6 +1,7 @@
 from odoo import models, fields
 
 class Administrador(models.Model):
+    #cambio antonio
     _name = 'upobebe.administrador'
     _description = 'Administrador'
 
