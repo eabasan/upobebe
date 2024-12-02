@@ -20,9 +20,8 @@
 
     # always loaded
     'data': [
-        'security/ir.model.access.csv',  # Accesos al modelo
         'security/security.xml',  # Seguridad y reglas de acceso
-        #'views/menu.xml',  # El archivo del menú que creamos
+        'security/ir.model.access.csv',  # Accesos al modelo
         'views/producto_view.xml',  # Vistas para el modelo Producto
         'views/usuario_view.xml',  # Vistas para el modelo Usuario
         'views/pedido_view.xml',  # Vistas para el modelo Pedido
