@@ -17,7 +17,7 @@ class Catalogo(models.Model):
 
     @api.depends('tipo')
     def _compute_productos(self):
-        # Filtra y asigna los productos al catálogo según el tipo de producto
+        # Filtra y asigna los productos al catálogo según el tipo de producto (comportamiento no básico)
         for catalogo in self:
             catalogo.productos_ids = self.env['upobebe.producto'].search([('tipo', '=', catalogo.tipo)])
     @api.depends('productos_ids.stock')

@@ -2,24 +2,21 @@
     <!-- Top menu item -->
     <menuitem name="UPOBEBÉ" id="main_upobebe_menu" groups="group_upobebe_manager,group_upobebe_user"/>
 
-    <!-- Menu categories for Administrators -->
+    <!-- Menú principal para Administradores -->
     <menuitem name="Administración" id="administracion_menu" groups="group_upobebe_manager" parent="main_upobebe_menu"/>
-    <menuitem name="Productos" id="productos_menu_category" groups="group_upobebe_manager" parent="main_upobebe_menu"/>
-    <menuitem name="Pedidos" id="pedidos_menu" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu"/>
-    <menuitem name="Devoluciones" id="devoluciones_menu" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu"/>
-    <menuitem name="Valoraciones" id="valoraciones_menu" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu"/>
-    <menuitem name="Reclamaciones" id="reclamaciones_menu" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu"/>
-    
-    <!-- Catalogos -->
+    <menuitem name="Productos" id="productos_menu_action" groups="group_upobebe_manager" parent="administracion_menu" action="productos_list_action"/>
+    <menuitem name="Pedidos" id="pedidos_menu_action" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu" action="pedidos_list_action"/>
+    <menuitem name="Devoluciones" id="devoluciones_menu_action" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu" action="devoluciones_list_action"/>
+    <menuitem name="Reclamaciones" id="reclamaciones_menu" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu" action="reclamaciones_list_action"/>
+    <menuitem name="Valoraciones" id="valoraciones_menu" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu" action="valoraciones_list_action"/>
+
+    <!-- Catálogos -->
     <menuitem name="Catálogos" id="catalogos_menu_user" parent="main_upobebe_menu" groups="group_upobebe_user" action="catalogos_list_action"/>
-    <menuitem name="Catálogos" id="catalogos_menu_admin" parent="administracion_menu" groups="group_upobebe_manager" action="catalogos_list_action"/>
-    
-    <!-- Actions -->
+    <menuitem name="Catálogos (Admin)" id="catalogos_menu_admin" parent="administracion_menu" groups="group_upobebe_manager" action="catalogos_list_action"/>
+
+    <!-- Menú exclusivo de Administradores -->
     <menuitem name="Administradores" id="administradores_menu" parent="administracion_menu" groups="group_upobebe_manager" action="administradores_list_action"/>
     <menuitem name="Compras" id="compras_menu" parent="administracion_menu" groups="group_upobebe_manager" action="compras_list_action"/>
-    <menuitem name="Productos" id="productos_menu_action" groups="group_upobebe_manager" action="productos_list_action"/>
     <menuitem name="Proveedores" id="proveedores_menu" parent="administracion_menu" groups="group_upobebe_manager" action="proveedores_list_action"/>
     <menuitem name="Usuarios" id="usuarios_menu_action" parent="administracion_menu" groups="group_upobebe_manager" action="usuarios_list_action"/>
-    <menuitem name="Pedidos" id="pedidos_menu" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu" action="pedidos_list_action"/>
-    <menuitem name="Devoluciones" id="devoluciones_menu" groups="group_upobebe_manager,group_upobebe_user" parent="main_upobebe_menu" action="devoluciones_list_action"/>
 </odoo>
