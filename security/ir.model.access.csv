@@ -9,7 +9,7 @@ compra_manager_access,upobebe_compra_manager,model_upobebe_compra,group_upobebe_
 compra_user_access,upobebe_compra_user,model_upobebe_compra,group_upobebe_user,1,0,0,0
 
 devolucion_manager_access,upobebe_devolucion_manager,model_upobebe_devolucion,group_upobebe_manager,1,1,1,1
-devolucion_user_access,upobebe_devolucion_user,model_upobebe_devolucion,group_upobebe_user,1,0,0,0
+devolucion_user_access,upobebe_devolucion_user,model_upobebe_devolucion,group_upobebe_user,1,0,1,0
 
 usuario_manager_access,upobebe_usuario_manager,model_upobebe_usuario,group_upobebe_manager,1,1,1,1
 usuario_user_access,upobebe_usuario_user,model_upobebe_usuario,group_upobebe_user,1,0,0,0
