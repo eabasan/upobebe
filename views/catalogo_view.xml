@@ -21,6 +21,7 @@
                                     <field name="tipo"/>
                                     <field name="precio"/>
                                     <field name="stock"/>
+                                    <field name="promedio_valoracion" string="Promedio Valoración"/>
                                 </tree>
                             </field>
                         </page>
