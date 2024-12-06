@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <record id="report_product_rating_report" model="ir.actions.report">
+            <field name="name">Product Rating Report</field>
+            <field name="model">upobebe.producto</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">upobebe.product_rating_report_template</field>
+            <field name="binding_model_id" ref="model_upobebe_producto"/>
+            <field name="binding_type">report</field>
+        </record>
+    </data>
+</odoo>

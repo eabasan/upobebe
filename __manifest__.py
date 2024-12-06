@@ -22,6 +22,8 @@
     'data': [
         'security/security.xml',  # Seguridad y reglas de acceso
         'security/ir.model.access.csv',  # Accesos al modelo
+        'views/templates.xml', # Plantillas de informes 
+        'reports/reports.xml', # Definiciones de informes
         'views/producto_view.xml',  # Vistas para el modelo Producto
         'views/usuario_view.xml',  # Vistas para el modelo Usuario
         'views/pedido_view.xml',  # Vistas para el modelo Pedido
