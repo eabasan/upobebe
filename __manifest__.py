@@ -21,9 +21,11 @@
     # always loaded
     'data': [
         'security/security.xml',  # Seguridad y reglas de acceso
-        'security/ir.model.access.csv',  # Accesos al modelo
-        'views/templates.xml', # Plantillas de informes 
-        'reports/reports.xml', # Definiciones de informes
+        'security/ir.model.access.csv',  # Accesos al modelo 
+        'reports/reports.xml', # Definiciones de informes 
+        'reports/reports_producto.xml', # Definiciones específicas de informes para Producto 
+        'reports/reports_reclamacion.xml', # Definiciones específicas de informes para Reclamación
+        'reports/reports_pedido.xml', # Informes y plantillas de pedidos
         'views/producto_view.xml',  # Vistas para el modelo Producto
         'views/usuario_view.xml',  # Vistas para el modelo Usuario
         'views/pedido_view.xml',  # Vistas para el modelo Pedido

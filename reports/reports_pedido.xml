@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+        <template id="pedido_report_template">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="pedido">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="row" style="font-size: 24px; margin-bottom: 20px;">
+                                <span style="font-weight: bold; text-decoration: underline;">Pedido:</span>
+                                <span style="color: #999999;" t-field="pedido.id_pedido" />
+                            </div>
+                            <div><strong>Estado:</strong> <t t-out="pedido.estado" /></div>
+                            <div><strong>Usuario:</strong> <t t-out="pedido.usuario_id.nombre" /></div>
+                            <div><strong>Productos:</strong></div>
+                            <ul>
+                                <t t-foreach="pedido.productos_ids" t-as="producto">
+                                    <li><strong><t t-out="producto.nombre" />:</strong> <t t-out="producto.descripcion" /></li>
+                                </t>
+                            </ul>
+                            <div><strong>Compra:</strong> <t t-out="pedido.compra_id.id_compra" /></div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

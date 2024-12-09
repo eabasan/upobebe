@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <!-- Reporte HTML -->
+         <!-- Reporte HTML de Producto -->
         <record id="report_product_rating_report_html" model="ir.actions.report">
             <field name="name">Product Rating Report HTML</field>
             <field name="model">upobebe.producto</field>
@@ -10,7 +10,7 @@
             <field name="binding_type">report</field>
         </record>
 
-        <!-- Reporte PDF -->
+        <!-- Reporte PDF de Producto -->
         <record id="report_product_rating_report_pdf" model="ir.actions.report">
             <field name="name">Product Rating Report PDF</field>
             <field name="model">upobebe.producto</field>
@@ -19,5 +19,46 @@
             <field name="binding_model_id" ref="model_upobebe_producto"/>
             <field name="binding_type">report</field>
         </record>
+
+        <!-- Reporte HTML de Reclamación -->
+        <record id="report_reclamacion_html" model="ir.actions.report">
+            <field name="name">Reclamación Report HTML</field>
+            <field name="model">upobebe.reclamacion</field>
+            <field name="report_type">qweb-html</field>
+            <field name="report_name">upobebe.reclamacion_report_template</field>
+            <field name="binding_model_id" ref="model_upobebe_reclamacion"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <!-- Reporte PDF de Reclamación -->
+        <record id="report_reclamacion_pdf" model="ir.actions.report">
+            <field name="name">Reclamación Report PDF</field>
+            <field name="model">upobebe.reclamacion</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">upobebe.reclamacion_report_template</field>
+            <field name="binding_model_id" ref="model_upobebe_reclamacion"/>
+            <field name="binding_type">report</field>
+        </record>
+
+         <!-- Reporte HTML de Pedido -->
+        <record id="report_pedido_html" model="ir.actions.report">
+            <field name="name">Pedido Report HTML</field>
+            <field name="model">upobebe.pedido</field>
+            <field name="report_type">qweb-html</field>
+            <field name="report_name">upobebe.pedido_report_template</field>
+            <field name="binding_model_id" ref="model_upobebe_pedido"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <!-- Reporte PDF de Pedido -->
+        <record id="report_pedido_pdf" model="ir.actions.report">
+            <field name="name">Pedido Report PDF</field>
+            <field name="model">upobebe.pedido</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">upobebe.pedido_report_template</field>
+            <field name="binding_model_id" ref="model_upobebe_pedido"/>
+            <field name="binding_type">report</field>
+        </record>
+  
     </data>
 </odoo>
