@@ -1,4 +1,25 @@
 <odoo>
+    <record id="view_devolucion_form" model="ir.ui.view">
+        <field name="name">devolucion.form</field>
+        <field name="model">upobebe.devolucion</field>
+        <field name="arch" type="xml">
+            <form string="Devolución">
+                <header>
+                    <button name="action_aceptada" string="Aceptar" type="object" class="oe_highlight" groups="upobebe.group_upobebe_manager"/>
+                    <button name="action_rechazada" string="Rechazar" type="object" class="oe_highlight" groups="upobebe.group_upobebe_manager"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="motivo"/>
+                        <field name="estado" widget="statusbar"/>
+                        <field name="usuario_id"/>
+                        <field name="pedido_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
     <record id="view_devolucion_tree" model="ir.ui.view">
         <field name="name">devolucion.tree</field>
         <field name="model">upobebe.devolucion</field>
@@ -12,21 +33,6 @@
         </field>
     </record>
 
-    <record id="view_devolucion_form" model="ir.ui.view">
-        <field name="name">devolucion.form</field>
-        <field name="model">upobebe.devolucion</field>
-        <field name="arch" type="xml">
-            <form string="Devolución">
-                <group>
-                    <field name="motivo"/>
-                    <field name="estado"/>
-                    <field name="usuario_id"/>
-                    <field name="pedido_id"/>
-                </group>
-            </form>
-        </field>
-    </record>
-
     <record id="devoluciones_list_action" model="ir.actions.act_window">
         <field name="name">Devoluciones</field>
         <field name="res_model">upobebe.devolucion</field>
@@ -35,5 +41,4 @@
             <p class="o_view_nocontent_smiling_face">Crea la primera devolución</p>
         </field>
     </record>
-
 </odoo>

@@ -11,3 +11,16 @@ class Reclamacion(models.Model):
 
     usuario_id = fields.Many2one('upobebe.usuario', string='Usuario', required=True)
     administrador_id = fields.Many2one('upobebe.administrador', string='Administrador')
+
+    estado = fields.Selection([ 
+        ('nueva', 'Nueva'), 
+        ('en_proceso', 'En Proceso'), 
+        ('resuelta', 'Resuelta'), 
+        ('rechazada', 'Rechazada') 
+        ], string='Estado', default='nueva', required=True) 
+    def action_en_proceso(self): 
+        self.write({'estado': 'en_proceso'}) 
+    def action_resuelta(self): 
+        self.write({'estado': 'resuelta'}) 
+    def action_rechazada(self): 
+        self.write({'estado': 'rechazada'})

@@ -1,33 +1,39 @@
 <odoo>
-    <record id="view_reclamacion_tree" model="ir.ui.view">
-        <field name="name">reclamacion.tree</field>
-        <field name="model">upobebe.reclamacion</field>
-        <field name="arch" type="xml">
-            <tree string="Reclamaciones">
-                <field name="mensaje"/>
-                <field name="nombre"/>
-                <field name="telefono"/>
-                <field name="producto"/>
-                <field name="usuario_id"/>
-                <field name="administrador_id"/>
-            </tree>
-        </field>
-    </record>
-
     <record id="view_reclamacion_form" model="ir.ui.view">
         <field name="name">reclamacion.form</field>
         <field name="model">upobebe.reclamacion</field>
         <field name="arch" type="xml">
             <form string="Reclamación">
-                <group>
-                    <field name="mensaje"/>
-                    <field name="nombre"/>
-                    <field name="telefono"/>
-                    <field name="producto"/>
-                    <field name="usuario_id"/>
-                    <field name="administrador_id"/>
-                </group>
+                <header>
+                    <button name="action_en_proceso" string="En Proceso" type="object" class="oe_highlight" groups="upobebe.group_upobebe_manager" visibility="{'invisible': [('estado', '!=', 'nueva')]}"/>
+                    <button name="action_resuelta" string="Resolver" type="object" class="oe_highlight" groups="upobebe.group_upobebe_manager" visibility="{'invisible': [('estado', '!=', 'en_proceso')]}"/>
+                    <button name="action_rechazada" string="Rechazar" type="object" class="oe_highlight" groups="upobebe.group_upobebe_manager" visibility="{'invisible': [('estado', '!=', 'nueva')]}"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="mensaje"/>
+                        <field name="nombre"/>
+                        <field name="telefono"/>
+                        <field name="producto"/>
+                        <field name="usuario_id"/>
+                        <field name="administrador_id"/>
+                        <field name="estado" widget="statusbar"/>
+                    </group>
+                </sheet>
             </form>
+        </field>
+    </record>
+
+    <record id="view_reclamacion_tree" model="ir.ui.view">
+        <field name="name">reclamacion.tree</field>
+        <field name="model">upobebe.reclamacion</field>
+        <field name="arch" type="xml">
+            <tree string="Reclamaciones">
+                <field name="nombre"/>
+                <field name="estado"/>
+                <field name="usuario_id"/>
+                <field name="administrador_id"/>
+            </tree>
         </field>
     </record>
 
@@ -39,5 +45,4 @@
             <p class="o_view_nocontent_smiling_face">Crea la primera reclamación</p>
         </field>
     </record>
-
 </odoo>
