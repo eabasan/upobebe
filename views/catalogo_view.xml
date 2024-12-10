@@ -11,6 +11,7 @@
                         <field name="tamanyo"/>
                         <field name="num_prod"/>
                         <field name="catalogo_id"/>
+                        <field name="administrador_id"/>
                     </group>
                     <notebook>
                         <page string="Productos">
