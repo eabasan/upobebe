@@ -39,10 +39,27 @@
         </field>
     </record>
 
+  <record id="upobebe_producto_search_view" model="ir.ui.view">
+    <field name="name">upobebe.producto.search</field>
+    <field name="model">upobebe.producto</field>
+    <field name="arch" type="xml">
+      <search>
+        <filter name="low_stock" string="Stock bajo (menor a 5)" domain="[('stock', '&lt;', 5)]" />
+        <separator orientation="vertical" />
+        <group expand="0" string="Agrupar por tipo">
+          <filter name="group_by_type" string="Tipo de producto" context="{'group_by': 'tipo'}" />
+        </group>
+      </search>
+    </field>
+</record>
+
+
+
     <record id="productos_list_action" model="ir.actions.act_window">
         <field name="name">Productos</field>
         <field name="res_model">upobebe.producto</field>
         <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="upobebe_producto_search_view"/>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">Crea el primer producto</p>
         </field>
