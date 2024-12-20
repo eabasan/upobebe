@@ -16,7 +16,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'web'],
 
     # always loaded
     'data': [
@@ -52,6 +52,14 @@
         'demo/upobebe.catalogo.csv',
     ],
     'application':True, 
+    
+    'assets': {
+        'web.assets_backend': [
+            'upobebe/static/src/scss/puntuacion_widget.scss',
+            'upobebe/static/src/js/puntuacion_widget.js',
+            'upobebe/static/src/xml/puntuacion_widget.xml',
+        ],
+    },
     
 }
 

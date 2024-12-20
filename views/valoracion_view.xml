@@ -20,7 +20,8 @@
             <form string="Valoración">
                 <group>
                     <field name="id_valoracion"/>
-                    <field name="puntuacion"/>
+                    <field name="puntuacion" widget="valoracion_estrellas"/>
+                    <field name="puntuacion" />
                     <field name="comentario"/>
                     <field name="producto_id"/>
                     <field name="usuario_id"/>

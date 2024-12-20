@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="OWLRatingPill">
+        <span t-attf-class="o_rating_pill #{props.value >= props.rating ? 'active' : ''}"
+              t-att-data-val="props.rating"
+              t-on-click="() => this.pillClicked()"
+              t-attf-title="Puntuación #{props.rating}">
+            &#9733; <!-- Unicode para estrella rellena -->
+        </span>
+    </t>
+
+    <span t-name="OWLValoracionWidget">
+        <t t-foreach="[1, 2, 3, 4, 5]" t-as='rating' t-key="rating">
+            <RatingPill onClickColorUpdated="data => this.colorUpdated(data)"
+                rating="rating"
+                value="props.value" />
+        </t>
+    </span>
+</templates>
